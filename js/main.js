@@ -6,6 +6,7 @@
             nav: false,
             dots: false,
             autoWidth: true,
+            autoplay: true,
             center:true,
             startPosition: 2,
         });

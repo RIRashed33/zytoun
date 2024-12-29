@@ -7,6 +7,7 @@
     --heading-font: "Baskervville", serif;
 }
 body {
+    font-family: var(--body-font);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -34,6 +35,7 @@ h1, h2 {
     font-family: var(--heading-font);
     font-weight: 400;
     font-style: italic;
+    margin-bottom: 0;
 }
 h1 {
     font-size: 80px;
@@ -47,7 +49,7 @@ h2 {
     font-size: 21px;
     line-height: 1.33;
 }
-.primary-solid, .primary-transparent {
+.primary-solid, .primary-transparent, .white-transparent {
     border: 1px solid var(--primary);
     text-align: center;
     font-family: var(--heading-font);
@@ -62,6 +64,14 @@ h2 {
 .primary-solid:hover, .primary-transparent {
     color: var(--primary);
     background-color: transparent;
+}
+.white-transparent {
+    color: var(--white);
+    border-color: var(--white);
+}
+.white-transparent:hover {
+    color: var(--text);
+    background-color: var(--white);
 }
 .btns-group {
     display: flex;
@@ -97,4 +107,122 @@ nav.navmenu ul li a {
 nav.navmenu ul li a:hover {
     text-shadow: 0 0 1px var(--primary);
     color: var(--primary);
+}
+
+/* Footer Style */
+.site-footer {
+    padding: 64px 0;
+    color: var(--white);
+    background-color: var(--text);
+    background: linear-gradient(180deg, var(--text) 0%, #2C1202 100%);
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+.footer-logo .policy {
+    color: var(--white);
+    text-decoration: underline;
+}
+.footer-logo .policy:hover {
+    color: var(--primary);
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+ul.social-icons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+/* Hero Section Style */
+.hero-section {
+    text-align: center;
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    padding: 64px 0 22%;
+}
+.hero-section h1 {
+    max-width: 780px;
+    margin: 0 auto 16px;
+}
+.hero-section p {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Food Slider Style */
+.carousel-section {
+    padding: 120px 0;
+    text-align: center;
+    background: url(../img/slider-bg.jpg) center / cover;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+}
+.carousel-section h2 {
+    max-width: 475px;
+    margin: 0 auto;
+}
+.single-carousel-image {
+    background-color: var(--off-white);
+    border-radius: 16px;
+    max-width: 202px;
+}
+.single-carousel-image img {
+    border-radius: 16px;
+}
+
+/* Box Column Style */
+.box-column {
+    padding: 116px 0;
+}
+.single-column-box {
+    display: flex;
+    align-items: stretch;
+    min-height: 100%;
+    padding: 24px;
+    background-color: #E8ECDF;
+    border-radius: 16px;
+}
+.single-column-box .single-box-content {
+    flex: 1;
+    padding: 32px 16px;
+    background-color: var(--white);
+    border-radius: 16px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+ul.card-anchor-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+ul.card-anchor-list li a {
+    font-family: var(--heading-font);
+    color: var(--primary);
+    text-transform: uppercase;
+    padding: 12px 12px 12px 11px;
+    border-bottom: 1px solid;
+}
+ul.card-anchor-list li a:hover {
+    color: var(--text);
 }

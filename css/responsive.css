@@ -63,7 +63,7 @@
         left: 0;
         width: 100%;
         background-color: var(--text);
-        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(44,18,2,1) 100%);
+        background: linear-gradient(180deg, var(--text) 0%, #2C1202 100%);
     }
     nav.navmenu {
         max-width: 720px;

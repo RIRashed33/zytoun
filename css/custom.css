@@ -31,6 +31,15 @@ img {
     max-width: 100%;
     height: auto;
 }
+input, textarea {
+    outline: none;
+    border: 1px solid #D5D9D0;
+    border-radius: 2px;
+    padding: 11px 15px;
+}
+textarea {
+    height: 90px;
+}
 h1, h2 {
     font-family: var(--heading-font);
     font-weight: 400;
@@ -353,4 +362,47 @@ span.small-divider {
 }
 .single-fullwidth-image img {
     width: 100%;
+}
+
+/* Contact Us Modal */
+#contactUsModal .modal-dialog {
+    max-width: 880px;
+}
+#contactUsModal .modal-content {
+    background-color: var(--off-white);
+    padding: 24px;
+    border-radius: 24px;
+}
+.contact-form-content {
+    padding: 48px;
+    background-color: var(--white);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.contact-form-content > :is(label, .form-title) {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.contact-image {
+    position: relative;
+}
+.contact-image img {
+    width: 100%;
+    border-radius: 16px;
+}
+.contact-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: var(--primary);
+    padding: 12px;
+    border-radius: 50%;
+    line-height: 24px;
+    text-align: center;
 }

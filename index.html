@@ -281,7 +281,7 @@
                 <div class="col-md">
                     <div class="footer-content">
                         <p class="large mb-0">Contact us if you have any inquiries or questions.</p>
-                        <a href="#" class="white-transparent"> CONTACT US</a>
+                        <a href="#contactUsModal" data-bs-toggle="modal" class="white-transparent">CONTACT US</a>
                     </div>
                 </div>
                 <div class="col-md">
@@ -301,44 +301,47 @@
 
     <!-- All Pop up content -->
     <!-- Contact Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade" id="contactUsModal">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="contact-modal-content">
-                    <div class="row">
-                        <div class="col-md">
-                            <form>
-                                <div class="contact-form-content">
-                                    <div class="form-title">
-                                        <h2>Contact us</h2>
-                                        <p>Any inquiries or questions? </p>
-                                    </div>
-                                    <label>
-                                        <span>Name</span>
-                                        <input type="text" name="" placeholder="e.g. Wade Warren">
-                                    </label>
-                                    <label>
-                                        <span>Email</span>
-                                        <input type="email" name="" placeholder="e.g. warren@mail.com">
-                                    </label>
-                                    <label>
-                                        <span>Subject</span>
-                                        <input type="text" name="" placeholder="e.g. Birthday Celebration at restaurant">
-                                    </label>
-                                    <label>
-                                        <span>Message</span>
-                                        <textarea name="" placeholder="Type your message here"></textarea>
-                                    </label>
-                                    <div class="form-submit">
-                                        <a href="#" class="primary-solid">SUBMIT MESSAGE</a>
-                                    </div>
+                <div class="row">
+                    <div class="col-md">
+                        <form>
+                            <div class="contact-form-content">
+                                <div class="form-title">
+                                    <h2>Contact us</h2>
+                                    <p>Any inquiries or questions? </p>
                                 </div>
-                            </form>
-                        </div>
-                        <div class="col-md">
-                            <div class="contact-image">
-                                <img src="./img/contact-image.jpg" alt="sample-food">
+                                <label>
+                                    <span>Name</span>
+                                    <input type="text" name="" placeholder="e.g. Wade Warren">
+                                </label>
+                                <label>
+                                    <span>Email</span>
+                                    <input type="email" name="" placeholder="e.g. warren@mail.com">
+                                </label>
+                                <label>
+                                    <span>Subject</span>
+                                    <input type="text" name="" placeholder="e.g. Birthday Celebration at restaurant">
+                                </label>
+                                <label>
+                                    <span>Message</span>
+                                    <textarea name="" placeholder="Type your message here"></textarea>
+                                </label>
+                                <div class="form-submit">
+                                    <a href="#" class="primary-solid">SUBMIT MESSAGE</a>
+                                </div>
                             </div>
+                        </form>
+                    </div>
+                    <div class="col-md">
+                        <div class="contact-image">
+                            <button class="contact-modal-close" data-bs-dismiss="modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#E8ECDE"/>
+                                </svg>
+                            </button>
+                            <img src="./img/contact-image.jpg" alt="sample-food">
                         </div>
                     </div>
                 </div>

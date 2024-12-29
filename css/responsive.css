@@ -95,5 +95,37 @@
     nav.navmenu {
         max-width: 540px;
     }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .hero-section {
+        padding: 64px 0 50%;
+    }
+    .carousel-section, .box-column, .vector-column-box {
+        padding: 64px 0;
+    }
+    .carousel-section {
+        gap: 48px;
+    }
+    .testimonial-content {
+        padding: 20px 20px 48px;
+    }
+    #testimonial_carousel .owl-nav {
+        right: calc(50% - 36px);
+        bottom: -36px;
+    }
+    .site-footer {
+        padding: 32px 0;
+    }
+    #contactUsModal .modal-content {
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .contact-form-content {
+        padding: 20px;
+    }
 
 }

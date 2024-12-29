@@ -356,7 +356,7 @@ span.small-divider {
     background-position: bottom right;
 }
 .full-width-section {
-    padding: 0 0 8px;
+    padding: 0 0 16px;
     background-color: var(--white);
     overflow: hidden;
 }
